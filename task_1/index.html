@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="comments" id="comments">
+        <h2>Comments</h2>
+        <ul id="comments__list">
+        </ul>
+
+        <form id="comment__form">
+            <label for="username">Name:</label>
+            <input type="text" id="username" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" required></textarea>
+
+            <button type="button" id="add__comment__btn">Add Comment</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        new CommentSection('#comments__list', '#username', '#comment', '#add__comment__btn').init();
+    </script>
+</body>
+</html>

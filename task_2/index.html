@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <div class="boxes">
+            <input type="checkbox" id="bold" name="bold" unchecked />
+            <label for="bold">Bold</label>
+            <input type="checkbox" id="underline" name="underline" unchecked />
+            <label for="underline">Underline</label>
+            <input type="checkbox" id="italics" name="italics" unchecked />
+            <label for="italics">Italics</label>
+            
+            <span>
+                <input type="radio" id="left" name="textAlign" value="left" checked />
+                <label for="left">Left</label>
+            </span>
+            
+            <span>
+                <input type="radio" id="right" name="textAlign" value="right" />
+                <label for="right">Right</label>
+            </span>
+            
+            <span>
+                <input type="radio" id="justify" name="textAlign" value="justify" />
+                <label for="justify">Justify</label>
+            </span>
+
+            
+        </div>
+        <textarea id="text"></textarea>
+    </form>
+    <div class="text__result">
+        <h2>Result</h2>
+        <p></p>
+    </div>
+
+    <button>Show text</button>
+    <script src="script.js"></script>
+    <script>
+        new TextStyler();
+    </script>
+</body>
+</html>
